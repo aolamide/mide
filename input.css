@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    /* COMMON */
+    body {
+        @apply bg-white dark:bg-[#242424] dark:text-white font-spaceG transition-colors duration-700;
+    }
+    .t-blue {
+        @apply text-[#11ABED]
+    }
+    .t-green {
+        @apply text-[#53DD6C];
+    }
+    .t-orange {
+        @apply text-[#F97316]
+    }
+    .t-pink {
+        @apply text-[#F28F8F]
+    }
+    /* NAVBAR */
+    .nav {
+        @apply p-5 fixed bg-white dark:bg-[#242424] w-full opacity-95 z-10
+    }
+    .nav-container {
+        @apply container flex justify-between items-center;
+    }
+    .nav-logo {
+        @apply flex items-center gap-x-2;
+    }
+    .nav-logo span {
+        @apply hidden md:inline
+    }
+    .nav-links {
+        @apply flex gap-x-6 items-center;
+    }
+    .nav button#theme-light {
+        @apply dark:inline hidden
+    }
+    .nav button#theme-dark {
+        @apply dark:hidden inline
+    }
+    .card {
+        @apply w-full my-4
+    }
+    .work-card {
+        @apply w-full md:w-[49%] my-4
+    }
+    .card img {
+        @apply w-full drop-shadow-md
+    }
+    .card h4 {
+        @apply text-3xl font-bold my-5;
+    }
+    .work-card ul {
+        @apply dark:text-[#F5F5F5] text-[#222] text-lg md:text-xl font-medium list-disc list-inside flex gap-x-1 md:gap-x-2 mb-3;
+    }
+    .work-card ul li {
+        @apply pl-1
+    }
+    .work-card ul li:first-child {
+        @apply list-none pl-0
+    }
+    .card p{
+        @apply dark:text-[#F9F9F9] text-[#555];
+    }
+    .writing-card {
+        @apply md:w-[32%]
+    }
+
+    /* ABOUT PAGE */
+    .about-text {
+        @apply flex flex-col gap-y-7 p-3 md:p-9 font-medium text-lg flex-1
+    }
+    .hobby {
+        @apply w-[95%] sm:w-[48%] lg:w-[22%]
+    }
+    .hobby h4 {
+        @apply text-lg flex gap-x-2 mb-3
+    }
+
+    /* FOOTER */
+    .footer {
+        @apply container px-5 mt-24
+    }
+    .footer h4 {
+        @apply text-center text-2xl font-bold mb-5 opacity-70 border-t py-5;
+    }
+    .footer div {
+        @apply flex justify-center w-full gap-x-6 items-center mb-8;
+    }
+    :is(.footer, .hobby) img:first-child {
+        @apply dark:inline hidden
+    }
+    :is(.footer, .hobby) img {
+        @apply inline dark:hidden
+    }
+}
