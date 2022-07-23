@@ -57,7 +57,7 @@
         @apply text-3xl font-bold my-5;
     }
     .work-card ul {
-        @apply dark:text-[#F5F5F5] text-[#222] text-lg md:text-xl font-medium list-disc list-inside flex gap-x-1 md:gap-x-2 mb-3;
+        @apply dark:text-[#F5F5F5] text-[#222] md:text-xl font-medium list-disc list-inside flex gap-x-1 md:gap-x-2 mb-3;
     }
     .work-card ul li {
         @apply pl-1
@@ -98,5 +98,47 @@
     }
     :is(.footer, .hobby) img {
         @apply inline dark:hidden
+    }
+
+    /* GRIND PROJECT PAGE */
+    .grind-details {
+        @apply flex flex-col md:flex-row my-10 gap-12
+    }
+    .grind-detail {
+        @apply flex-1 
+    }
+    .grind-detail h5 {
+        @apply mb-3 font-bold text-lg md:text-xl 
+    }
+    .grind-detail p {
+        @apply dark:text-[#F9F9F9] text-[#333] text-base font-light
+    }
+
+    .grind-solution {
+        @apply flex items-center mt-6 flex-col md:flex-row gap-4
+    }
+    .grind-solution-details {
+        @apply md:px-16 py-16
+    }
+    .grind-solution-details p {
+        @apply font-extrabold text-lg mb-5
+    }
+    .grind-solution-details ul {
+        @apply list-disc list-inside
+    }
+    .grind-solution-details ul li {
+        @apply mb-5
+    }
+    .grind-pain-points {
+        @apply flex gap-7 my-10 flex-wrap justify-between
+    }
+    .grind-pain-point {
+        @apply w-full md:w-1/4 min-w-[280px]
+    }
+    .grind-pain-point h6{
+        @apply font-medium text-2xl my-2
+    }
+    .grind-pain-point div{
+        @apply border w-10 h-10 flex items-center justify-center rounded-full mb-5
     }
 }
