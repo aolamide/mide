@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 /*
-! tailwindcss v3.1.5 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -962,6 +962,10 @@ body{
   display: flex;
 }
 
+.table{
+  display: table;
+}
+
 .w-full{
   width: 100%;
 }
@@ -994,9 +998,8 @@ body{
   row-gap: 2.5rem;
 }
 
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+.border{
+  border-width: 1px;
 }
 
 .px-5{
