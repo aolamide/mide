@@ -22,6 +22,9 @@
     .t-pink {
         @apply text-[#F28F8F]
     }
+    .t-purple {
+        @apply dark:text-[#E1B7FF] text-[#aa46f2]
+    }
     /* NAVBAR */
     .nav {
         @apply p-5 fixed bg-white dark:bg-[#242424] w-full opacity-95 z-10
@@ -140,5 +143,8 @@
     }
     .grind-pain-point div{
         @apply border w-10 h-10 flex items-center justify-center rounded-full mb-5
+    }
+    .prototype-image {
+        @apply w-5/12 md:w-fit bg-[url(./grind-mobile-app/images/phone.svg)] bg-cover bg-no-repeat py-2 pl-2 md:pl-[11px] pr-2
     }
 }
