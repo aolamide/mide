@@ -7,8 +7,11 @@
 
 @layer components {
     /* COMMON */
+    html {
+        @apply scroll-smooth
+    }
     body {
-        @apply bg-white dark:bg-[#242424] dark:text-white font-spaceG transition-colors duration-700;
+        @apply bg-white dark:bg-[#242424] dark:text-white font-spaceG transition-colors duration-700 scroll-smooth;
     }
     .t-blue {
         @apply text-[#11ABED]

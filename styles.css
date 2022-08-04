@@ -598,7 +598,12 @@ video {
 
 /* COMMON */
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
+  scroll-behavior: smooth;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   font-family: Space Grotesk, sans-serif;
@@ -1295,6 +1300,10 @@ body{
        column-gap: 0.25rem;
 }
 
+.overflow-scroll{
+  overflow: scroll;
+}
+
 .border-y{
   border-top-width: 1px;
   border-bottom-width: 1px;
@@ -1504,10 +1513,6 @@ body{
 }
 
 @media (min-width: 1024px){
-  .lg\:w-4\/5{
-    width: 80%;
-  }
-
   .lg\:flex-row{
     flex-direction: row;
   }
