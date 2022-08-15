@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 /*
-! tailwindcss v3.1.7 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -351,13 +351,6 @@ textarea {
 */
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -1225,6 +1218,10 @@ body{
   display: block;
 }
 
+.inline{
+  display: inline;
+}
+
 .flex{
   display: flex;
 }
@@ -1233,14 +1230,14 @@ body{
   display: none;
 }
 
-.w-full{
-  width: 100%;
-}
-
 .w-fit{
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-3xl{
@@ -1311,6 +1308,11 @@ body{
 
 .border-b{
   border-bottom-width: 1px;
+}
+
+.bg-\[\#202020\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 32 32 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#424040\]{
@@ -1460,6 +1462,16 @@ body{
   display: none;
 }
 
+.dark .dark\:bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .dark .dark\:text-\[\#F9F9F9\]{
   --tw-text-opacity: 1;
   color: rgb(249 249 249 / var(--tw-text-opacity));
@@ -1473,6 +1485,11 @@ body{
 .dark .dark\:text-\[\#F6F6F6\]{
   --tw-text-opacity: 1;
   color: rgb(246 246 246 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-\[\#202020\]{
+  --tw-text-opacity: 1;
+  color: rgb(32 32 32 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){
