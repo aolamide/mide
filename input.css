@@ -25,6 +25,9 @@
     .t-pink {
         @apply text-[#F28F8F]
     }
+    .t-blue2{
+        @apply text-[#75B3E6]
+    }
     .t-purple {
         @apply dark:text-[#E1B7FF] text-[#aa46f2]
     }
@@ -155,5 +158,8 @@
     }
     .prototype-image {
         @apply w-5/12 md:w-fit bg-[url(./grind-mobile-app/images/phone.svg)] bg-cover bg-no-repeat py-2 pl-2 md:pl-[11px] pr-2
+    }
+    .prototype-image-2 {
+        @apply w-5/12 md:w-fit py-2 pl-2 md:pl-[11px] pr-2
     }
 }
