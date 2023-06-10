@@ -703,6 +703,29 @@ body{
   display: none;
 }
 
+.live-project-card{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px){
+  .live-project-card{
+    width: 33.333333%;
+  }
+}
+
+.live-project-card a{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(117 179 230 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
 .card{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1198,10 +1221,6 @@ body{
   width: 100%;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
 .max-w-3xl{
   max-width: 48rem;
 }
@@ -1240,6 +1259,10 @@ body{
 
 .justify-between{
   justify-content: space-between;
+}
+
+.gap-6{
+  gap: 1.5rem;
 }
 
 .gap-3{
@@ -1450,10 +1473,6 @@ body{
 
   .md\:w-1\/2{
     width: 50%;
-  }
-
-  .md\:w-2\/5{
-    width: 40%;
   }
 
   .md\:flex-row{
