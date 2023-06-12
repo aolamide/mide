@@ -719,6 +719,10 @@ body{
   }
 }
 
+.live-project-card img{
+  width: 100%;
+}
+
 .live-project-card a{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1103,8 +1107,24 @@ body{
   }
 }
 
+.visible{
+  visibility: visible;
+}
+
+.collapse{
+  visibility: collapse;
+}
+
 .fixed{
   position: fixed;
+}
+
+.relative{
+  position: relative;
+}
+
+.top-0{
+  top: 0px;
 }
 
 .order-2{
@@ -1221,10 +1241,6 @@ body{
   margin-bottom: 2rem;
 }
 
-.mt-8{
-  margin-top: 2rem;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
@@ -1235,6 +1251,10 @@ body{
 
 .mt-6{
   margin-top: 1.5rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
 }
 
 .block{
@@ -1266,12 +1286,24 @@ body{
   width: 100%;
 }
 
+.w-screen{
+  width: 100vw;
+}
+
 .max-w-3xl{
   max-width: 48rem;
 }
 
 .flex-1{
   flex: 1 1 0%;
+}
+
+.border-collapse{
+  border-collapse: collapse;
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .list-inside{
@@ -1314,12 +1346,12 @@ body{
   gap: 0.75rem;
 }
 
-.gap-4{
-  gap: 1rem;
-}
-
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-y-10{
@@ -1333,6 +1365,10 @@ body{
 
 .overflow-scroll{
   overflow: scroll;
+}
+
+.border{
+  border-width: 1px;
 }
 
 .border-y{
@@ -1483,12 +1519,6 @@ body{
   text-decoration-line: underline;
 }
 
-.shadow-md{
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-lg{
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -1570,6 +1600,10 @@ body{
 
   .md\:pt-36{
     padding-top: 9rem;
+  }
+
+  .md\:pt-40{
+    padding-top: 10rem;
   }
 
   .md\:text-5xl{
