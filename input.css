@@ -36,7 +36,7 @@
         @apply p-5 fixed bg-white dark:bg-[#242424] w-full opacity-95 z-10
     }
     .nav-container {
-        @apply container flex justify-between items-center;
+        @apply container flex flex-col md:flex-row justify-between items-center;
     }
     .nav-logo {
         @apply flex items-center gap-x-2;
@@ -133,7 +133,10 @@
     }
 
     .grind-solution {
-        @apply flex items-center mt-6 flex-col md:flex-row gap-4
+        @apply flex items-center mt-6 flex-col lg:flex-row gap-4
+    }
+    .grind-solution img{
+        @apply lg:w-[490px] lg:h-[490px]
     }
     .grind-solution-details {
         @apply md:px-16 py-16
